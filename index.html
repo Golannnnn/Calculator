@@ -9,27 +9,30 @@
 </head>
 <body>
     <main>
+        <h1>A simple calculator</h1>
         <section id="calculator">
-            <input type="text" id="item-output" value=" " />
+            <input type="text" id="item-output2" value=" " onpaste="return false" disabled/>
+            <input type="text" id="item-output" value=" " onpaste="return false"/>
             <button type="button" id="item-7" onclick="input(this)" value="7">7</button>
             <button type="button" id="item-8" onclick="input(this)" value="8">8</button>
             <button type="button" id="item-9" onclick="input(this)" value="9">9</button>
-            <button type="button" id="item-add" onclick='storeOperator(this.value)' value="add">+</button>
-            <button type="button" id="item-back">back</button>
+            <button type="button" id="item-add" class="operator" onclick='storeOperator(this.value)' value="+">+</button>
+            <button type="button" id="item-back">BACK</button>
             <button type="button" id="item-4" onclick="input(this)" value="4">4</button>
             <button type="button" id="item-5" onclick="input(this)" value="5">5</button>
             <button type="button" id="item-6" onclick="input(this)" value="6">6</button>
-            <button type="button" id="item-subtract" onclick='storeOperator(this.value)' value="subtract">-</button>
-            <button type="button" id="item-clear">clear</button>
+            <button type="button" id="item-subtract" class="operator" onclick='storeOperator(this.value)' value="-">-</button>
+            <button type="button" id="item-clear">CLEAR</button>
             <button type="button" id="item-1" onclick="input(this)" value="1">1</button>
             <button type="button" id="item-2" onclick="input(this)" value="2">2</button>
             <button type="button" id="item-3" onclick="input(this)" value="3">3</button>
-            <button type="button" id="item-multiply" onclick='storeOperator(this.value)' value="multiply">x</button>
-            <button type="button" id="item-equals">=</button>
+            <button type="button" id="item-multiply" class="operator" onclick='storeOperator(this.value)' value="*">*</button>
+            <button type="button" id="item-equals" class="operator">=</button>
             <button type="button" id="item-0" onclick="input(this)" value="0">0</button>
             <button type="button" id="item-dot" onclick="input(this)" value=".">.</button>
-            <button type="button" id="item-divide" onclick='storeOperator(this.value)' value="divide">÷</button>  
+            <button type="button" id="item-divide" class="operator" onclick='storeOperator(this.value)' value="/">/</button>  
         </section>
+        <h2><a href="https://github.com/Golannnnn">by Golannnnn</a></h2>
     </main>
     <script defer src="javascript.js"></script>
 </body>
